@@ -20,7 +20,6 @@
             position: relative;
         }
 
-        /* Efeito de padrão sutil */
         body::before {
             content: '';
             position: fixed;
@@ -107,7 +106,6 @@
             align-items: center;
         }
 
-        /* Botões refinados */
         .btn {
             padding: 12px 28px;
             border: none;
@@ -203,7 +201,6 @@
             z-index: 5;
         }
 
-        /* Cards de estatísticas melhorados */
         .stats-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -277,7 +274,6 @@
             gap: 5px;
         }
 
-        /* Tabela refinada */
         .perfumes-table {
             background: white;
             border-radius: 30px;
@@ -455,7 +451,7 @@
             border: 1px solid #ffb74d;
         }
 
-        /* Modal refinado */
+        /* MODAL */
         .modal {
             display: none;
             position: fixed;
@@ -575,70 +571,41 @@
             resize: vertical;
         }
 
-        /* ESTILOS MELHORADOS PARA IMAGENS */
-        .upload-area {
+        /* ESTILOS SIMPLES PARA IMAGENS */
+        .upload-container {
             border: 2px dashed #c17b4c;
-            border-radius: 20px;
-            padding: 30px;
+            border-radius: 15px;
+            padding: 20px;
             text-align: center;
             background: #fff9f5;
+            margin-bottom: 15px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
         }
 
-        .upload-area:hover {
+        .upload-container:hover {
             background: #fff0e6;
-            border-color: #9e633b;
         }
 
-        .upload-area i {
+        .upload-container i {
             font-size: 40px;
             color: #c17b4c;
             margin-bottom: 10px;
         }
 
-        .upload-area p {
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        .upload-area small {
-            color: #999;
-            font-size: 0.8em;
-        }
-
-        .upload-area.has-files {
-            border-style: solid;
-            background: #e8f0e8;
-            border-color: #2a382a;
-        }
-
-        .imagens-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 15px;
+        .imagens-lista {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-top: 15px;
         }
 
         .imagem-item {
             position: relative;
-            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
             overflow: hidden;
-            aspect-ratio: 1;
-            border: 3px solid #ddd;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .imagem-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        .imagem-item.principal {
-            border-color: #c17b4c;
-            box-shadow: 0 0 0 3px rgba(193, 123, 76, 0.3);
+            border: 2px solid #ddd;
         }
 
         .imagem-item img {
@@ -647,82 +614,25 @@
             object-fit: cover;
         }
 
-        .imagem-overlay {
+        .imagem-item .remove-btn {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .imagem-item:hover .imagem-overlay {
-            opacity: 1;
-        }
-
-        .imagem-btn {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
+            top: 5px;
+            right: 5px;
+            background: #dc3545;
+            color: white;
             border: none;
-            background: white;
-            color: #333;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
+            font-size: 16px;
         }
 
-        .imagem-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .imagem-btn.principal-btn {
-            background: #c17b4c;
-            color: white;
-        }
-
-        .imagem-btn.principal-btn:hover {
-            background: #9e633b;
-        }
-
-        .imagem-btn.delete-btn {
-            background: #dc3545;
-            color: white;
-        }
-
-        .imagem-btn.delete-btn:hover {
+        .imagem-item .remove-btn:hover {
             background: #c82333;
-        }
-
-        .principal-badge {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: #c17b4c;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 20px;
-            font-size: 0.7em;
-            font-weight: 600;
-            z-index: 2;
-        }
-
-        .imagem-counter {
-            display: inline-block;
-            background: #2a382a;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 50px;
-            font-size: 0.85em;
-            margin-left: 10px;
         }
 
         .loading {
@@ -859,7 +769,6 @@
 
             <form id="perfumeForm" enctype="multipart/form-data">
                 <input type="hidden" id="perfumeId">
-                <input type="hidden" id="imagemPrincipal" value="">
                 
                 <div class="form-group">
                     <label><i class="fas fa-tag"></i> Nome do Perfume *</label>
@@ -917,24 +826,19 @@
                 </div>
 
                 <div class="form-group">
-                    <label>
-                        <i class="fas fa-images"></i> 
-                        Imagens (máx. 5)
-                        <span class="imagem-counter" id="imagemCounter">0/5</span>
-                    </label>
+                    <label><i class="fas fa-images"></i> Imagens</label>
                     
-                    <!-- Área de upload melhorada -->
-                    <div class="upload-area" id="uploadArea" onclick="document.getElementById('imagens').click()">
+                    <!-- Área de upload SIMPLES -->
+                    <div class="upload-container" onclick="document.getElementById('imagens').click()">
                         <i class="fas fa-cloud-upload-alt"></i>
                         <p><strong>Clique para selecionar imagens</strong></p>
-                        <p>ou arraste e solte aqui</p>
-                        <small>Formatos: JPG, PNG, GIF (max 5MB cada)</small>
+                        <small>Formatos: JPG, PNG (max 5MB cada)</small>
                     </div>
                     
-                    <input type="file" id="imagens" accept="image/*" multiple style="display: none;" onchange="handleImageSelect(event)">
+                    <input type="file" id="imagens" name="imagens" accept="image/*" multiple style="display: none;" onchange="previewImagens()">
                     
-                    <!-- Grid de imagens -->
-                    <div class="imagens-grid" id="imagensGrid"></div>
+                    <!-- Preview das imagens -->
+                    <div class="imagens-lista" id="imagensPreview"></div>
                 </div>
 
                 <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 30px;">
@@ -952,8 +856,6 @@
     <script>
         let perfumes = [];
         let perfumesFiltrados = [];
-        let imagensSelecionadas = []; // Array para armazenar as imagens selecionadas (File objects)
-        let imagensExistentes = []; // Array para armazenar URLs das imagens existentes
 
         // Verificar autenticação
         async function checkAuth() {
@@ -1080,13 +982,7 @@
             document.getElementById('modal-title').textContent = 'Novo Perfume';
             document.getElementById('perfumeForm').reset();
             document.getElementById('perfumeId').value = '';
-            document.getElementById('imagemPrincipal').value = '';
-            
-            // Limpar imagens
-            imagensSelecionadas = [];
-            imagensExistentes = [];
-            atualizarGridImagens();
-            
+            document.getElementById('imagensPreview').innerHTML = '';
             document.getElementById('perfumeModal').classList.add('active');
         }
 
@@ -1109,14 +1005,19 @@
             document.getElementById('preco').value = perfume.preco;
             document.getElementById('notasOlfativas').value = perfume.notasOlfativas;
             document.getElementById('fixacao').value = perfume.fixacao;
-            
-            // Definir imagem principal
-            document.getElementById('imagemPrincipal').value = perfume.imagemPrincipal || (perfume.imagens ? perfume.imagens[0] : '');
 
-            // Carregar imagens existentes
-            imagensExistentes = perfume.imagens || [];
-            imagensSelecionadas = [];
-            atualizarGridImagens();
+            // Mostrar imagens existentes
+            const preview = document.getElementById('imagensPreview');
+            if (perfume.imagens && perfume.imagens.length > 0) {
+                preview.innerHTML = perfume.imagens.map(img => `
+                    <div class="imagem-item">
+                        <img src="${img}" alt="Imagem">
+                        <button type="button" class="remove-btn" onclick="removerImagemExistente('${img}')">×</button>
+                    </div>
+                `).join('');
+            } else {
+                preview.innerHTML = '';
+            }
 
             document.getElementById('perfumeModal').classList.add('active');
         }
@@ -1126,102 +1027,54 @@
             window.open(`/?destaque=${id}`, '_blank');
         }
 
-        // HANDLE IMAGE SELECT - Nova função melhorada
-        function handleImageSelect(event) {
-            const files = Array.from(event.target.files);
-            const totalAtual = imagensSelecionadas.length + imagensExistentes.length;
-            const vagasRestantes = 5 - totalAtual;
+        // Preview de imagens
+        function previewImagens() {
+            const input = document.getElementById('imagens');
+            const preview = document.getElementById('imagensPreview');
             
-            if (files.length > vagasRestantes) {
-                alert(`Você só pode adicionar mais ${vagasRestantes} imagem(ns). No máximo 5 imagens no total.`);
-                return;
-            }
-
-            // Adicionar novas imagens ao array
-            files.forEach(file => {
-                if (file.size <= 5 * 1024 * 1024) { // 5MB max
-                    imagensSelecionadas.push(file);
-                } else {
-                    alert(`Imagem ${file.name} muito grande. Máximo 5MB.`);
-                }
-            });
-
-            atualizarGridImagens();
+            preview.innerHTML = '';
             
-            // Limpar input para permitir selecionar os mesmos arquivos novamente
-            event.target.value = '';
-        }
-
-        // Atualizar grid de imagens
-        function atualizarGridImagens() {
-            const grid = document.getElementById('imagensGrid');
-            const counter = document.getElementById('imagemCounter');
-            const totalImagens = imagensExistentes.length + imagensSelecionadas.length;
-            
-            counter.textContent = `${totalImagens}/5`;
-            
-            if (totalImagens === 0) {
-                grid.innerHTML = '';
-                return;
-            }
-
-            let html = '';
-
-            // Imagens existentes
-            imagensExistentes.forEach((imgUrl, index) => {
-                const isPrincipal = (imgUrl === document.getElementById('imagemPrincipal').value);
-                html += `
-                    <div class="imagem-item ${isPrincipal ? 'principal' : ''}">
-                        ${isPrincipal ? '<div class="principal-badge"><i class="fas fa-star"></i> Principal</div>' : ''}
-                        <img src="${imgUrl}" alt="Imagem ${index + 1}">
-                        <div class="imagem-overlay">
-                            <button type="button" class="imagem-btn principal-btn" onclick="definirImagemPrincipalExistente('${imgUrl}')" title="Definir como principal">
-                                <i class="fas fa-star"></i>
-                            </button>
-                            <button type="button" class="imagem-btn delete-btn" onclick="removerImagemExistente('${imgUrl}')" title="Remover">
-                                <i class="fas fa-trash"></i>
-                            </button>
-                        </div>
-                    </div>
-                `;
-            });
-
-            // Novas imagens selecionadas
-            imagensSelecionadas.forEach((file, index) => {
+            for (let i = 0; i < input.files.length; i++) {
+                const file = input.files[i];
                 const reader = new FileReader();
-                const imageUrl = URL.createObjectURL(file);
-                const imageIndex = imagensExistentes.length + index;
-                const isPrincipal = (document.getElementById('imagemPrincipal').value === `nova_${imageIndex}`);
-                
-                html += `
-                    <div class="imagem-item ${isPrincipal ? 'principal' : ''}" id="nova-imagem-${imageIndex}">
-                        ${isPrincipal ? '<div class="principal-badge"><i class="fas fa-star"></i> Principal</div>' : ''}
-                        <img src="${imageUrl}" alt="Nova imagem ${index + 1}">
-                        <div class="imagem-overlay">
-                            <button type="button" class="imagem-btn principal-btn" onclick="definirImagemPrincipalNova(${imageIndex})" title="Definir como principal">
-                                <i class="fas fa-star"></i>
-                            </button>
-                            <button type="button" class="imagem-btn delete-btn" onclick="removerImagemNova(${imageIndex})" title="Remover">
-                                <i class="fas fa-trash"></i>
-                            </button>
-                        </div>
-                    </div>
-                `;
-            });
 
-            grid.innerHTML = html;
+                reader.onload = function(e) {
+                    const div = document.createElement('div');
+                    div.className = 'imagem-item';
+                    div.innerHTML = `
+                        <img src="${e.target.result}" alt="Preview">
+                        <button type="button" class="remove-btn" onclick="removerImagemPreview(this)">×</button>
+                    `;
+                    preview.appendChild(div);
+                }
+
+                reader.readAsDataURL(file);
+            }
         }
 
-        // Definir imagem principal (existente)
-        function definirImagemPrincipalExistente(imgUrl) {
-            document.getElementById('imagemPrincipal').value = imgUrl;
-            atualizarGridImagens();
-        }
-
-        // Definir imagem principal (nova)
-        function definirImagemPrincipalNova(index) {
-            document.getElementById('imagemPrincipal').value = `nova_${index}`;
-            atualizarGridImagens();
+        // Remover imagem do preview
+        function removerImagemPreview(btn) {
+            const imagemItem = btn.parentElement;
+            const preview = document.getElementById('imagensPreview');
+            
+            // Encontrar o índice da imagem no FileList
+            const index = Array.from(preview.children).indexOf(imagemItem);
+            
+            // Remover do preview
+            imagemItem.remove();
+            
+            // Atualizar o FileList do input (não é possível diretamente, então vamos criar um novo FileList)
+            const input = document.getElementById('imagens');
+            const dt = new DataTransfer();
+            
+            // Adicionar todos os arquivos exceto o removido
+            for (let i = 0; i < input.files.length; i++) {
+                if (i !== index) {
+                    dt.items.add(input.files[i]);
+                }
+            }
+            
+            input.files = dt.files;
         }
 
         // Remover imagem existente
@@ -1240,42 +1093,13 @@
                 });
 
                 if (response.ok) {
-                    imagensExistentes = imagensExistentes.filter(url => url !== imagemUrl);
-                    
-                    // Se a imagem removida era a principal, limpar ou definir nova principal
-                    if (document.getElementById('imagemPrincipal').value === imagemUrl) {
-                        document.getElementById('imagemPrincipal').value = imagensExistentes[0] || '';
-                    }
-                    
-                    atualizarGridImagens();
+                    editarPerfume(parseInt(perfumeId));
                 } else {
                     alert('Erro ao remover imagem');
                 }
             } catch (error) {
                 alert('Erro ao conectar com o servidor');
             }
-        }
-
-        // Remover nova imagem
-        function removerImagemNova(index) {
-            const imagemIndex = index - imagensExistentes.length;
-            imagensSelecionadas.splice(imagemIndex, 1);
-            
-            // Se a imagem removida era a principal, limpar ou definir nova principal
-            if (document.getElementById('imagemPrincipal').value === `nova_${index}`) {
-                const totalImagens = imagensExistentes.length + imagensSelecionadas.length;
-                if (totalImagens > 0) {
-                    if (imagensExistentes.length > 0) {
-                        document.getElementById('imagemPrincipal').value = imagensExistentes[0];
-                    } else if (imagensSelecionadas.length > 0) {
-                        document.getElementById('imagemPrincipal').value = `nova_${imagensExistentes.length}`;
-                    }
-                } else {
-                    document.getElementById('imagemPrincipal').value = '';
-                }
-            }
-            
-            atualizarGridImagens();
         }
 
         // Deletar perfume
@@ -1309,15 +1133,11 @@
             formData.append('preco', document.getElementById('preco').value);
             formData.append('notasOlfativas', document.getElementById('notasOlfativas').value);
             formData.append('fixacao', document.getElementById('fixacao').value);
-            formData.append('imagemPrincipal', document.getElementById('imagemPrincipal').value);
 
-            // Adicionar imagens existentes como JSON
-            formData.append('imagensExistentes', JSON.stringify(imagensExistentes));
-
-            // Adicionar novas imagens
-            imagensSelecionadas.forEach(file => {
-                formData.append('novasImagens', file);
-            });
+            const imagens = document.getElementById('imagens').files;
+            for (let i = 0; i < imagens.length; i++) {
+                formData.append('imagens', imagens[i]);
+            }
 
             const perfumeId = document.getElementById('perfumeId').value;
             const url = perfumeId ? `/api/perfumes/${perfumeId}` : '/api/perfumes';
@@ -1333,53 +1153,14 @@
                     fecharModal();
                     carregarPerfumes();
                 } else {
-                    const error = await response.text();
-                    alert('Erro ao salvar perfume: ' + error);
+                    const errorText = await response.text();
+                    console.error('Erro:', errorText);
+                    alert('Erro ao salvar perfume. Verifique o console para mais detalhes.');
                 }
             } catch (error) {
+                console.error('Erro:', error);
                 alert('Erro ao conectar com o servidor');
             }
-        });
-
-        // Drag and drop melhorado
-        const uploadArea = document.getElementById('uploadArea');
-        
-        uploadArea.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            uploadArea.style.background = '#fff0e6';
-            uploadArea.style.borderColor = '#9e633b';
-        });
-
-        uploadArea.addEventListener('dragleave', (e) => {
-            e.preventDefault();
-            uploadArea.style.background = '#fff9f5';
-            uploadArea.style.borderColor = '#c17b4c';
-        });
-
-        uploadArea.addEventListener('drop', (e) => {
-            e.preventDefault();
-            uploadArea.style.background = '#fff9f5';
-            uploadArea.style.borderColor = '#c17b4c';
-            
-            const files = Array.from(e.dataTransfer.files).filter(file => file.type.startsWith('image/'));
-            
-            const totalAtual = imagensSelecionadas.length + imagensExistentes.length;
-            const vagasRestantes = 5 - totalAtual;
-            
-            if (files.length > vagasRestantes) {
-                alert(`Você só pode adicionar mais ${vagasRestantes} imagem(ns). No máximo 5 imagens no total.`);
-                return;
-            }
-
-            files.forEach(file => {
-                if (file.size <= 5 * 1024 * 1024) {
-                    imagensSelecionadas.push(file);
-                } else {
-                    alert(`Imagem ${file.name} muito grande. Máximo 5MB.`);
-                }
-            });
-
-            atualizarGridImagens();
         });
 
         // Fechar modal ao clicar fora
