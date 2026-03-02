@@ -51,12 +51,11 @@ app.use(session({
     secret: 'seu-segredo-super-secreto',
     resave: false,
     saveUninitialized: false,
-    
-        cookie: {
-    secure: true,
-    sameSite: "none",
-    maxAge: 3600000
-}
+    cookie: {
+        secure: true,
+        sameSite: "none",
+        maxAge: 3600000
+    }
     }
 ));
 
