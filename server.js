@@ -207,6 +207,9 @@ app.delete('/api/perfumes/:id', requireAuth, async (req, res) => {
 
     res.json({ success: true });
 });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 
 app.listen(PORT, () => {
