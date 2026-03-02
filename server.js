@@ -39,7 +39,10 @@ const upload = multer({
 });
 
 
-app.use(cors());
+app.use(cors({
+    origin: "https://catalogoperfumesadm.onrender.com",
+    credentials: true
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -48,11 +51,14 @@ app.use(session({
     secret: 'seu-segredo-super-secreto',
     resave: false,
     saveUninitialized: false,
-    cookie: {
-        secure: process.env.NODE_ENV === 'production', // 🔥 ajustado para produção
-        maxAge: 3600000
+    
+        cookie: {
+    secure: true,
+    sameSite: "none",
+    maxAge: 3600000
+}
     }
-}));
+));
 
 
 
