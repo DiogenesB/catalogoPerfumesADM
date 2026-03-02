@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "nome": "Asad - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Masculino",
+    "descricao": "Asad, da renomada casa Lattafa Perfumes, é uma fragrância âmbar amadeirada masculina que traduz o equilíbrio perfeito entre sofisticação e intensidade.",
+    "preco": "R$ 179,90",
+    "notasOlfativas": "Notas de Topo: Pimenta Preta, Tabaco e Abacaxi. <br> Notas de Coração: Patchouli, Café e Íris. <br> Notas de Fundo: Baunilha, Âmbar, Madeira Seca, Benjoim e Ládano",
+    "fixacao": "Alta - 8 a 14h",
+    "imagens": [
+      "/imagens/asadpreto_img.jpeg",
+      "/imagens/asadpreto_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Attar Al Wesal - Al Wataniah",
+    "marca": "AL WATANIAH",
+    "categoria": "Masculino",
+    "descricao": "Attar Al Wesal, da prestigiada Al Wataniah Perfumes, é uma fragrância amadeirada chipre masculina criada para homens intensos e confiantes.",
+    "preco": "R$ 149,90",
+    "notasOlfativas": "Notas de Topo: Lavanda, Pêra, Hortelã e Limão. <br> Notas de Coração: Canela, Sálvia e Cardamomo. <br> Notas de Fundo: Baunilha Preta, Cedro e Patchouli.",
+    "fixacao": "Alta - 8 a 12h",
+    "imagens": [
+      "/imagens/attar_img.jpeg",
+      "/imagens/attar_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Bade'e Al Oud For Glory - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Masculino",
+    "descricao": "Bade'e Al Oud For Glory, da renomada casa Lattafa Perfumes, é uma fragrância oriental amadeirada intensa que combina a riqueza do oud com especiarias envolventes.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Açafrão, Noz-moscada e Lavanda. <br> Notas de Coração: Oud (madeira de agar). <br> Notas de Fundo: Patchouli e Almíscar.",
+    "fixacao": "Alta - 8 a 12h",
+    "imagens": [
+      "/imagens/badeoud_img.jpeg",
+      "/imagens/badeoud_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Bade'e Al Oud Amethyst - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Bade’e Al Oud Amethyst, da prestigiada casa Lattafa Perfumes, é uma fragrância oriental sofisticada que combina a intensidade do oud com a sensualidade da rosa.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Pimenta rosa e Bergamota. <br> Notas de Coração: Rosa turca, Rosa búlgara e Jasmim. <br> Notas de Fundo: Oud (madeira de agar), Âmbar e Baunilha.",
+    "fixacao": "Muito Alta - 10 a 14h",
+    "imagens": [
+      "/imagens/amethyst_img.jpeg",
+      "/imagens/amethyst_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Asad Bourbon - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Masculino",
+    "descricao": "Asad Bourbon, da renomada casa Lattafa Perfumes, é uma fragrância âmbar amadeirada intensa que combina especiarias sofisticadas com um fundo quente e envolvente de baunilha bourbon.",
+    "preco": "R$ 199,90",
+    "notasOlfativas": "Notas de Topo: Pimenta rosa, Lavanda e Ameixa Mirabelle. <br> Notas de Coração: Cacau, Noz-moscada e Davana. <br> Notas de Fundo: Baunilha Bourbon, Âmbar e Vetiver.",
+    "fixacao": "Muito Alta - 10 a 14h",
+    "imagens": [
+      "imagens/boubon_img.jpeg",
+      "imagens/bourbon_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Club de Nuit Intense Man - Armaf",
+    "marca": "ARMAF",
+    "categoria": "Masculino",
+    "descricao": "Club de Nuit Intense Man, da prestigiada casa Armaf, é uma fragrância amadeirada frutada sofisticada que combina frescor cítrico com profundidade marcante, criando um aroma masculino, elegante e extremamente sedutor.",
+    "preco": "R$ 259,90",
+    "notasOlfativas": "Notas de Topo: Limão, Abacaxi, Bergamota, Groselha negra e Maçã. <br> Notas de Coração: Rosa, Jasmim e Vidoeiro. <br> Notas de Fundo: Almíscar, Âmbar cinzento, Patchouli e Baunilha.",
+    "fixacao": "Alta - 8 a 12h",
+    "imagens": [
+      "/imagens/clubdnuit_img.jpeg",
+      "/imagens/clubdnuit_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Fakhar Rose - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Fakhar Rose, da renomada casa Lattafa Perfumes, é uma fragrância floral oriental feminina que combina a delicadeza da rosa com um toque doce e envolvente, revelando um aroma sofisticado, elegante e extremamente feminino.",
+    "preco": "R$ 199,90",
+    "notasOlfativas": "Notas de Topo: Frutas vermelhas, Romã, Lírio. <br> Notas de Coração: Rosa, Jasmim e Gardênia. <br> Notas de Fundo: Baunilha, Almíscar branco, Sândalo e Âmbar.",
+    "fixacao": "Alta - 10 a 12h",
+    "imagens": [
+      "/imagens/fakharrose_img.jpeg",
+      "/imagens/fakharrose_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "Detour Noir - Al Haramain",
+    "marca": "AL HARAMAIN",
+    "categoria": "Masculino",
+    "descricao": "Detour Noir, da renomada casa Al Haramain, é uma fragrância âmbar especiada sofisticada que combina o frescor frutado com especiarias quentes e um fundo cremoso de baunilha, revelando um aroma elegante, sedutor e extremamente envolvente.",
+    "preco": "R$ 179,90",
+    "notasOlfativas": "Notas de Topo: Maçã, Lavanda, Jasmim e Violeta. <br> Notas de Coração: Baunilha e Flor de laranjeira. <br> Notas de Fundo: Cardamomo, Pimenta, Patchouli, Sândalo e Gerânio.",
+    "fixacao": "Media - 6 a 8h",
+    "imagens": [
+      "/imagens/detournoir_img.jpeg",
+      "/imagens/detournoir_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Khamrah - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Khamrah, da renomada casa Lattafa Perfumes, é uma fragrância oriental gourmand feminina intensa que combina especiarias quentes com notas doces e envolventes, revelando um aroma sofisticado, luxuoso e viciante.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Canela, Noz-moscada e Bergamota. <br> Notas de Coração: Tâmaras, Praliné e Tuberosa. <br> Notas de Fundo: Baunilha, Âmbar, Tonka e Madeira.",
+    "fixacao": "Muito Alta - 10 a 14h",
+    "imagens": [
+      "/imagens/khamrah_img.jpeg",
+      "/imagens/khamrah_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Fakhar Black - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Masculino",
+    "descricao": "Fakhar Black, da renomada casa Lattafa Perfumes, é uma fragrância oriental amadeirada intensa e sofisticada que combina notas profundas e selvagens com um toque doce e envolvente.",
+    "preco": "R$ 189,90",
+    "notasOlfativas": "Notas de Topo: Bergamota e Pimenta rosa. <br> Notas de Coração: Cedro e Patchouli. <br> Notas de Fundo: Âmbar, Almíscar cinzento e Baunilha.",
+    "fixacao": "Muito Alta - 10 a 14h",
+    "imagens": [
+      "imagens/fakharblack_img.jpeg",
+      "imagens/fakharblack_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "Pride Nebras - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Pride Nebras, da renomada casa Lattafa Perfumes, é uma fragrância oriental gourmand doce e envolvente que traduz sofisticação, feminilidade e personalidade marcante. Com um aroma rico em nuances doces e cremosas.",
+    "preco": "R$ 199,90",
+    "notasOlfativas": "Notas de Topo: Frutas vermelhas e Tangerina. <br> Notas de Coração: Baunilha e Cacau. <br> Notas de Fundo: Tonka, Âmbar e Almíscar.",
+    "fixacao": "Alta - 9 a 13h",
+    "imagens": [
+      "/imagens/nebras_img.jpeg",
+      "/imagens/nebras_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "9PM - Afnan Perfumes",
+    "marca": "AFNAN",
+    "categoria": "Masculino",
+    "descricao": "9PM, da prestigiada casa Afnan Perfumes, é uma fragrância oriental gourmand profunda e sofisticada que combina tons doces, especiados e quentes, criando um aroma sedutor, elegante e envolvente.",
+    "preco": "R$ 199,90",
+    "notasOlfativas": "Notas de Topo: Maçã, Canela, Lavanda e Bergamota. <br> Notas de Coração: Flor de laranjeira e Lírio-do-vale. <br> Notas de Fundo: Baunilha, Tonka, Âmbar e Madeira.",
+    "fixacao": "Alta - 9 a 13h",
+    "imagens": [
+      "/imagens/9pm_img.jpeg",
+      "/imagens/9pm_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 13,
+    "nome": "9PM Elixir - Afnan Perfumes",
+    "marca": "AFNAN",
+    "categoria": "Masculino",
+    "descricao": "9PM Elixir, da prestigiada casa Afnan Perfumes, é uma fragrância oriental gourmand intensa e sofisticada que eleva a experiência do clássico 9PM com maior profundidade, calor e presença.",
+    "preco": "R$ 289,90",
+    "notasOlfativas": "Notas de Topo: Maçã e Bergamota. <br> Notas de Coração: Canela, Jasmim e Flores brancas. <br> Notas de Fundo: Baunilha, Tonka, Âmbar e Madeira.",
+    "fixacao": "Muito Alta - 10 a 14h",
+    "imagens": [
+      "/imagens/9pmelixir_img.jpeg",
+      "/imagens/9pmelixir_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 14,
+    "nome": "Yara Moi - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Yara Moi, da renomada casa Lattafa Perfumes, é uma fragrância oriental frutada feminina que combina notas doces e suaves com um fundo quente e envolvente, criando um aroma delicado, elegante e moderno.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Pêssego e Jasmim. <br> Notas de Coração: Caramelo e Frutas suaves. <br> Notas de Fundo: Patchouli, Sândalo e Almíscar.",
+    "fixacao": "Media - 7 a 10h",
+    "imagens": [
+      "/imagens/yaramoi_img.jpeg",
+      "/imagens/yaramoi_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 15,
+    "nome": "Yara Tradicional - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Yara Tradicional, da renomada casa Lattafa Perfumes, é uma fragrância oriental floral feminina que combina notas frutadas suaves com um coração delicado de flores e um fundo cremoso e envolvente.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Frutas frescas e Bergamota. <br> Notas de Coração: Rosa, Jasmim e Flor de laranjeira. <br> Notas de Fundo: Baunilha, Almíscar e Sândalo.",
+    "fixacao": "Alta - 8 a 12h",
+    "imagens": [
+      "/imagens/yaratradicional_img.jpeg",
+      "/imagens/yaratradicional_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 16,
+    "nome": "Yara Tous - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Yara Tous, da renomada casa Lattafa Perfumes, é uma fragrância oriental frutada feminina que combina a doçura de frutas tropicais com um coração floral delicado e um fundo suave e envolvente.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Manga, Coco e Maracujá. <br> Notas de Coração: Jasmim, Heliotrópio e Flor de laranjeira. <br> Notas de Fundo: Baunilha, Almíscar e Cashmere.",
+    "fixacao": "Alta - 8 a 12h",
+    "imagens": [
+      "/imagens/yaratous_img.jpeg",
+      "/imagens/yaratous_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 17,
+    "nome": "Yara Elixir - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Yara Elixir, da renomada casa Lattafa Perfumes, é uma fragrância feminina oriental frutada intensa que combina a doçura envolvente das frutas com um toque floral sofisticado e um fundo cremoso e luxuoso.",
+    "preco": "R$ 199,90",
+    "notasOlfativas": "Notas de Topo: Tangerina e Pêra. <br> Notas de Coração: Jasmim e Flor de laranjeira. <br> Notas de Fundo: Baunilha, Almíscar e Sândalo.",
+    "fixacao": "Alta - 8 a 12h",
+    "imagens": [
+      "/imagens/yaraelixir_img.jpeg",
+      "/imagens/yaraelixir_descrição.jpeg"
+    ]
+  },
+  {
+    "id": 18,
+    "nome": "Yara Candy - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Feminino",
+    "descricao": "Yara Candy, da renomada casa Lattafa Perfumes, é uma fragrância feminina oriental gourmand doce e divertida que combina notas açucaradas e frutadas com um fundo cremoso e envolvente.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Açúcar cristal e Frutas vermelhas. <br> Notas de Coração: Caramelo e Flor de algodão doce. <br> Notas de Fundo: Baunilha, Almíscar e Sândalo.",
+    "fixacao": "Alta - 8 a 12h",
+    "imagens": [
+      "/imagens/yaracandy_img.jpeg",
+      "/imagens/yaracandy_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 19,
+    "nome": "Asad Elixir - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Masculino",
+    "descricao": "Asad Elixir, da renomada casa Lattafa Perfumes, é uma fragrância masculina oriental amadeirada intensa e sofisticada que combina frescor especiado com riqueza de madeiras nobres e um fundo quente e sensual.",
+    "preco": "R$ 209,90",
+    "notasOlfativas": "Notas de Topo: Cardamomo e Pimenta. <br> Notas de Coração: Incenso e Madeira de Oud. <br> Notas de Fundo: Baunilha, Âmbar, Almíscar e Patchouli.",
+    "fixacao": "Muito Alta - 10 a 14h",
+    "imagens": [
+      "/imagens/asadelixir_img.jpeg",
+      "/imagens/asadelixir_descricao.jpeg"
+    ]
+  },
+  {
+    "id": 20,
+    "nome": "Asad Zanzibar - Lattafa Perfumes",
+    "marca": "LATTAFA",
+    "categoria": "Masculino",
+    "descricao": "Asad Zanzibar, da prestigiosa casa Lattafa Perfumes, é uma fragrância masculina oriental amadeirada que traduz força, elegância e sensualidade. Com um aroma rico em especiarias e madeiras nobres.",
+    "preco": "R$ 159,90",
+    "notasOlfativas": "Notas de Topo: Cardamomo e Pimenta. <br> Notas de Coração: Incenso e Madeira de Oud. <br> Notas de Fundo: Baunilha, Âmbar, Almíscar e Patchouli.",
+    "fixacao": "Muito Alta - 10 a 14h",
+    "imagens": [
+      "/imagens/asadzanzibar_img.jpeg",
+      "/imagens/asadzanzibar_descricao.jpeg"
+    ]
+  }
+]
