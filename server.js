@@ -73,7 +73,7 @@ function requireAuth(req, res, next) {
 app.post('/api/login', (req, res) => {
     const { username, password } = req.body;
 
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'Fbarcellos' && password === 'Kadett1228') {
         req.session.authenticated = true;
         req.session.username = username;
 
